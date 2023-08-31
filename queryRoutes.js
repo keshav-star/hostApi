@@ -15,23 +15,26 @@ async function fetchData(sql) {
     }
 }
 
-app.get('/', async (req, res) => {
-    let sql = 'SELECT * FROM API_DATA';
+app.get('/search', async (req, res) => {
+    const location = req.query.location; // Get location from query parameter
+    let sql = `SELECT * FROM API_DATA WHERE WB_Location_ID='${location}'`;
 
     if (req.query.VehicleNo) {
         const vehicleNo = req.query.VehicleNo;
-        sql = `SELECT * FROM API_DATA WHERE VehicleNo='${vehicleNo}'`;
-    } else if (req.query.TRNo) {
+        sql += ` AND VehicleNo='${vehicleNo}'`;
+    }
+
+    if (req.query.TRNo) {
         const trNo = req.query.TRNo;
-        sql = `SELECT * FROM API_DATA WHERE TRNo='${trNo}'`;
+        sql += ` AND TRNo='${trNo}'`;
     }
 
     const result = await fetchData(sql);
-    const formattedResult = {};
+    const formattedResult = [];
 
     for (const item of result) {
         const { T_ID, WB_Location_ID, ...rest } = item;
-        formattedResult[T_ID] = rest;
+        formattedResult.push(rest);
     }
 
     fs.writeFile('db.json', JSON.stringify(formattedResult, null, 2), (err) => {
