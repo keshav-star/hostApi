@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@el3um4s/node-mdb": "^0.1.2",
+    "express": "^4.18.2",
+    "json-server": "^0.17.3",
+    "mdb-parse": "^1.0.4",
+    "mdb-reader": "^2.2.6",
+    "node-adodb": "^5.0.3",
+    "node-fetch": "^3.3.1",
+    "tabletop": "^1.6.3"
+  },
+  "scripts": {
+    "start": "json-server db.json"
+  },
+  
+  "type": "module"
+}

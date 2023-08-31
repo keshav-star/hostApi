@@ -1,0 +1,112 @@
+{
+  "hydcdjdm_wb": {
+    "1": {
+      "TRNo": "1001",
+      "VehicleNo": "AP16TT1001",
+      "TypeofMaterial": "C&D WASTER UNCLAIMED1",
+      "DateIn": "30/8/2023",
+      "TimeIn": "6:10:01 AM",
+      "DateOut": "30/8/2023",
+      "TimeOut": "6:15:11 AM",
+      "GrossWeight": "9501",
+      "TareWeight": "8501",
+      "NetWeight": "1000"
+    },
+    "2": {
+      "TRNo": "1002",
+      "VehicleNo": "AP16TT1002",
+      "TypeofMaterial": "C&D WASTER UNCLAIMED2",
+      "DateIn": "30/8/2023",
+      "TimeIn": "6:20:02 AM",
+      "DateOut": "30/8/2023",
+      "TimeOut": "6:15:22 AM",
+      "GrossWeight": "9502",
+      "TareWeight": "7502",
+      "NetWeight": "2000"
+    },
+    "3": {
+      "TRNo": "1003",
+      "VehicleNo": "AP16TT1003",
+      "TypeofMaterial": "C&D WASTER UNCLAIMED3",
+      "DateIn": "30/8/2023",
+      "TimeIn": "6:20:03 AM",
+      "DateOut": "30/8/2023",
+      "TimeOut": "6:15:33 AM",
+      "GrossWeight": "9503",
+      "TareWeight": "6503",
+      "NetWeight": "3000"
+    },
+    "4": {
+      "TRNo": "1004",
+      "VehicleNo": "AP16TT1004",
+      "TypeofMaterial": "C&D WASTER UNCLAIMED4",
+      "DateIn": "30/8/2023",
+      "TimeIn": "6:20:04 AM",
+      "DateOut": "30/8/2023",
+      "TimeOut": "6:15:44 AM",
+      "GrossWeight": "9504",
+      "TareWeight": "5504",
+      "NetWeight": "4000"
+    },
+    "5": {
+      "TRNo": "1005",
+      "VehicleNo": "AP16TT1005",
+      "TypeofMaterial": "C&D WASTER UNCLAIMED5",
+      "DateIn": "30/8/2023",
+      "TimeIn": "6:20:05 AM",
+      "DateOut": "30/8/2023",
+      "TimeOut": "6:15:55 AM",
+      "GrossWeight": "9505",
+      "TareWeight": "4505",
+      "NetWeight": "5000"
+    },
+    "200": {
+      "TRNo": "2001",
+      "VehicleNo": "AP16TT2001",
+      "TypeofMaterial": "ELECTRICAL WASTE1",
+      "DateIn": "20/8/2023",
+      "TimeIn": "5:10:01 AM",
+      "DateOut": "20/8/2023",
+      "TimeOut": "5:15:11 AM",
+      "GrossWeight": "9521",
+      "TareWeight": "8521",
+      "NetWeight": "1000"
+    },
+    "201": {
+      "TRNo": "2002",
+      "VehicleNo": "AP16TT2002",
+      "TypeofMaterial": "ELECTRICAL WASTE2",
+      "DateIn": "20/8/2023",
+      "TimeIn": "5:10:02 AM",
+      "DateOut": "20/8/2023",
+      "TimeOut": "5:15:22 AM",
+      "GrossWeight": "9522",
+      "TareWeight": "7522",
+      "NetWeight": "2000"
+    },
+    "203": {
+      "TRNo": "2003",
+      "VehicleNo": "AP16TT2003",
+      "TypeofMaterial": "ELECTRICAL WASTE3",
+      "DateIn": "20/8/2023",
+      "TimeIn": "5:10:03 AM",
+      "DateOut": "20/8/2023",
+      "TimeOut": "5:15:33 AM",
+      "GrossWeight": "9523",
+      "TareWeight": "6523",
+      "NetWeight": "3000"
+    },
+    "204": {
+      "TRNo": "2004",
+      "VehicleNo": "AP16TT2004",
+      "TypeofMaterial": "ELECTRICAL WASTE4",
+      "DateIn": "20/8/2023",
+      "TimeIn": "5:10:04 AM",
+      "DateOut": "20/8/2023",
+      "TimeOut": "5:15:44 AM",
+      "GrossWeight": "9524",
+      "TareWeight": "5524",
+      "NetWeight": "4000"
+    }
+  }
+}
