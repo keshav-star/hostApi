@@ -10,8 +10,7 @@
     "tabletop": "^1.6.3"
   },
   "scripts": {
-    "start": "node mdbtocsv.js"
+    "start": "node queryRoutes.js"
   },
-  
   "type": "module"
 }
