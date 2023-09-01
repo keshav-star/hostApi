@@ -24,15 +24,15 @@ app.get('/', async (req, res) => {
     const vehicleNo = req.query.vehno;
     const trNo = req.query.trno;
 
-    let sql = `SELECT * FROM API_DATA WHERE WB_Location_ID='${location}'`;
+    let sql = `SELECT * FROM API_DATA`;
 
-    if (vehicleNo) {
-        sql += ` AND VehicleNo='${vehicleNo}'`;
-    }
+    // if (vehicleNo) {
+    //     sql += ` AND VehicleNo='${vehicleNo}'`;
+    // }
 
-    if (trNo) {
-        sql += ` AND TRNo='${trNo}'`;
-    }
+    // if (trNo) {
+    //     sql += ` AND TRNo='${trNo}'`;
+    // }
 
 
     const result = await query.sql({
