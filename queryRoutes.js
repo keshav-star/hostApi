@@ -6,30 +6,41 @@ const app = Express();
 const port = process.env.PORT || 3000;
 const database = "./Weighing_API.mdb";
 
-async function fetchData(sql) {
-    try {
-        const result = await query.sql({ database, sql });
-        return result;
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
 
-app.get('/search', async (req, res) => {
+// async function fetchData(sql) {
+//     try {
+//         const result = await query.sql({
+//             database,
+//             sql
+//         });
+//         return result;
+//     } catch (error) {
+//         console.error('Error:', error);
+//     }
+// }
+
+app.get('/', async (req, res) => {
     const location = req.query.location; // Get location from query parameter
+    const vehicleNo = req.query.vehno;
+    const trNo = req.query.trno;
+
     let sql = `SELECT * FROM API_DATA WHERE WB_Location_ID='${location}'`;
 
-    if (req.query.VehicleNo) {
-        const vehicleNo = req.query.VehicleNo;
+    if (vehicleNo) {
         sql += ` AND VehicleNo='${vehicleNo}'`;
     }
 
-    if (req.query.TRNo) {
-        const trNo = req.query.TRNo;
+    if (trNo) {
         sql += ` AND TRNo='${trNo}'`;
     }
 
-    const result = await fetchData(sql);
+
+    const result = await query.sql({
+        database,
+        sql,
+    })
+    console.log(sql)
+    console.log(result)
     const formattedResult = [];
 
     for (const item of result) {
