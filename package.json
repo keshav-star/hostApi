@@ -9,5 +9,8 @@
   "scripts": {
     "start": "node queryRoutes.js"
   },
-  "type": "module"
+  "type": "module",
+    "engines": {
+    "node": "=20"
+  }
 }
